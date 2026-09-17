@@ -32,19 +32,18 @@ The HiPore-C datasets analysed in HHTAD are available from the Gene Expression O
 | Human | K562 | H3K4me3 | ENCFF112BHN |
 | Human | K562 | H3K9me3 | ENCFF371GMJ |
 
-## First --Model training
-Model training
+## First --Model
+1. Model training
 
 ```python
 python main.ipynb
 ```
-
-## Second --Model prediction
+2. Model prediction
 #predicted
 ```python
 load_model.ipynb
 ```
-## Third --Filtering false-positive borders and assembling merged TADs
+## Second --Filtering false-positive borders
 1. hypergraph flux coefficient calculation
 ```python
 python flux.py
@@ -54,7 +53,8 @@ python flux.py
 ```python
 python fliter_borders.py
 ```
-3. Nested TADs are obtained
+## Final -- Assembling merged TADs
+Nested TADs are obtained
 
 ```python
 python merge_TAD.py
